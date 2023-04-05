@@ -61,7 +61,7 @@ const Search = () => {
                                 <ul>
                                     {
                                         results?.map((item, key) => (
-                                            <Link href={`/movie/${item.id}`} onClick={handleInputSelect} >
+                                            <Link href={`/movie/${item.id}`} onClick={handleInputSelect} key={key}>
                                                 <li key={key} className='border-b pl-8 py-3 '>{item.title}</li>
                                             </Link>
                                         ))
