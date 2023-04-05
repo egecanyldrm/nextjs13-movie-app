@@ -20,11 +20,11 @@ const page = async ({ params }: { params: IParams }) => {
                 alt={movie.title}
                 className='image-overlay'
             />
-            <div className='mt-12 flex flex-col gap-10 px-10'  >
+            <div className='mt-12 flex flex-col gap-10 md:px-10'  >
                 <h1 className='uppercase font-bold title'>{movie.title}</h1>
-                <h3 className=' max-w-2xl  text-2xl'>{movie.overview} </h3>
-                <div className='flex flex-row gap-12'>
-                    <Link href="#" className='py-5 px-32 font-bold text-xl bg-white  text-black  rounded-full'> Play</Link>
+                <h3 className=' max-w-2xl  lg:text-2xl'>{movie.overview} </h3>
+                <div className='flex flex-row gap-12 '>
+                    <Link href="#" className='py-5 md:px-32  px-5 font-bold text-xl bg-white  text-black  rounded-full'> Return Home</Link>
                     <button className='border-solid border-white h-16 w-16 flex justify-center items-center rounded-full'><FaPlus /></button>
                 </div>
             </div>
